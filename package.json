@@ -1,0 +1,19 @@
+{
+  "name": "personal-project-html-and-css",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "light-server -s . -w '**/*.css,**/*.html # # reload'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/giorgi0203/personal-project-html-and-css.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/giorgi0203/personal-project-html-and-css/issues"
+  },
+  "homepage": "https://github.com/giorgi0203/personal-project-html-and-css#readme"
+}
