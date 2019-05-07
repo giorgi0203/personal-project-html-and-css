@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link
-      href="https://fonts.googleapis.com/css?family=Lato"
+      href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900"
       rel="stylesheet"
     />
     <link
@@ -20,49 +20,38 @@
   <body>
     <main>
       <header>
+        <div></div>
         <div class="header-wrap">
           <div class="logo">
             <img src="images/header-logo.png" />
             <div class="logo-text">
-              <p>we are the</p>
-              <p>fox<span>shop</span></p>
+              <p class="Lato-Regular">we are the</p>
+              <p class="Lato-Black">fox<span class="Lato">shop</span></p>
             </div>
           </div>
 
           <nav>
-            <ul>
-              <li>
-                <a href="#"
-                  >WOMEN <i class="fa fa-angle-down" aria-hidden="true"></i
-                ></a>
+            <ul class="Lato-Black">
+              <li class="active">
+                <a href="#"> WOMEN <i class="fa fa-angle-down"></i></a>
               </li>
               <li>
-                <a href="#"
-                  >MAN <i class="fa fa-angle-down" aria-hidden="true"></i
-                ></a>
+                <a href="#"> MAN <i class="fa fa-angle-down"></i></a>
               </li>
               <li>
-                <a href="#"
-                  >KIDS <i class="fa fa-angle-down" aria-hidden="true"></i
-                ></a>
+                <a href="#"> KIDS <i class="fa fa-angle-down"></i></a>
               </li>
               <li>
-                <a href="#"
-                  >SPORT <i class="fa fa-angle-down" aria-hidden="true"></i
-                ></a>
+                <a href="#"> SPORT <i class="fa fa-angle-down"></i></a>
               </li>
               <li>
-                <a href="#"
-                  >SALE OFF <i class="fa fa-angle-down" aria-hidden="true"></i
-                ></a>
+                <a href="#"> SALE OFF <i class="fa fa-angle-down"></i></a>
               </li>
               <li>
-                <a href="#"
-                  >FEATURED <i class="fa fa-angle-down" aria-hidden="true"></i
-                ></a>
+                <a href="#"> FEATURED <i class="fa fa-angle-down"></i></a>
               </li>
               <li>
-                <a href="#">COLLECTIONS</a>
+                <a href="#"> COLLECTIONS</a>
               </li>
             </ul>
           </nav>
@@ -82,28 +71,122 @@
           </div>
           <img src="./images/slider-image.png" alt="" />
           <div class="content">
-            <p class="header">
-              You’re more powerful than you think <br>
-              <span class="iphone-lg">iPhone 7 <span>S</span></span>
+            <p class="header Lato-Light">
+              You’re more powerful than you think <br />
             </p>
-            <p>
+            <p class="iphone-lg Lato-Regular">
+              <span class="Lato-Regular">i</span>
+              <span class="Lato-Light">Phone 7</span>
+              <span class="Lato-Light">S</span>
+            </p>
+            <p class="text Lato-Light">
               Forward thinking and incredibly useful, iPhone 7s brings the
-              future of<br> technology to work. With a remarkably thin, light
-              design, the A9 chip with<br> 128-bit desktop-class architecture, a
-              fingerprint identity sensor, innovative<br> apps for business, and
-              ultrafast LTE wireless, iPhone 7s sets a new standard<br> for
-              business.
+              future of<br />
+              technology to work. With a remarkably thin, light design, the A9
+              chip with<br />
+              128-bit desktop-class architecture, a fingerprint identity sensor,
+              innovative<br />
+              apps for business, and ultrafast LTE wireless, iPhone 7s sets a
+              new standard<br />
+              for business.
             </p>
             <div class="buttons">
               <a href="#" class="btn">VIEW MORE</a>
               <a href="#" class="btn">ONLY $975</a>
             </div>
           </div>
-          <div class="slider-nav"></div>
+          <div class="slider-pagination">
+            <ul>
+              <li><div></div></li>
+              <li><div></div></li>
+              <li class="current"><div></div></li>
+              <li><div></div></li>
+            </ul>
+          </div>
         </div>
       </header>
       <div class="content">
-        <section></section>
+        <section class="featured">
+          <div class="head">
+            <p class="Lato-Light">
+              <span class="Lato-Black">Featured</span> Products
+            </p>
+            <div class="scroll-btns">
+              <div class="left"><i class="fa fa-angle-left"></i></div>
+              <div class="right"><i class="fa fa-angle-right"></i></div>
+            </div>
+          </div>
+          <div class="cards-featured">
+            <div class="card">
+              <div class="media"></div>
+              <div class="info">
+                <p class="name Lato-Bold">Samsung Galaxy S9</p>
+                <p class="stars">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                </p>
+                <p class="price Lato-Black">$589.00</p>
+              </div>
+              <div class="actions">
+                <div class="add-cart"><a href="#">Add to cart</a></div>
+                <div class="view-details"><a href="#">View detail</a></div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="media"></div>
+              <div class="info">
+                <p class="name Lato-Bold">Samsung Galaxy S9</p>
+                <p class="stars">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                </p>
+                <p class="price Lato-Black">$589.00</p>
+              </div>
+              <div class="actions">
+                <div class="add-cart"><a href="#">Add to cart</a></div>
+                <div class="view-details"><a href="#">View detail</a></div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="media"></div>
+              <div class="info">
+                <p class="name Lato-Bold">Samsung Galaxy S9</p>
+                <p class="stars">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                </p>
+                <p class="price Lato-Black">$589.00</p>
+              </div>
+              <div class="actions">
+                <div class="add-cart"><a href="#">Add to cart</a></div>
+                <div class="view-details"><a href="#">View detail</a></div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="media"></div>
+              <div class="info">
+                <p class="name Lato-Bold">Samsung Galaxy S9</p>
+                <p class="stars">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                </p>
+                <p class="price Lato-Black">$589.00</p>
+              </div>
+              <div class="actions">
+                <div class="add-cart"><a href="#">Add to cart</a></div>
+                <div class="view-details"><a href="#">View detail</a></div>
+              </div>
+            </div>
+          </div>
+        </section>
       </div>
       <footer></footer>
     </main>

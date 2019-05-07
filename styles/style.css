@@ -5,7 +5,7 @@
 }
 
 body {
-  background-color: gray;
+  background-color: white;
   font-family: "Lato";
   font-size: 15px;
 }
@@ -14,25 +14,51 @@ main {
   width: 100%;
   height: 100%;
 }
-
+/* fonts */
+.Lato-Regular {
+  font-family: "Lato";
+  font-size: 15px;
+  font-weight: 400;
+}
+.Lato-Light {
+  font-family: "Lato";
+  font-size: 15px;
+  font-weight: 300;
+}
+.Lato-Black {
+  font-family: "Lato";
+  font-size: 15px;
+  font-weight: 900;
+}
+.Lato-Bold {
+  font-family: "Lato";
+  font-size: 15px;
+  font-weight: 700;
+}
+/* 
+ head
+ */
 header {
   background-color: #2c3e50;
   width: 100%;
   height: 900px;
-  padding-top: 39px;
+  padding-top: 34px;
+  margin-top: 5px;
 }
+
 .header-wrap {
   display: flex;
   justify-content: start;
   align-items: center;
 }
+
 header nav {
   margin-top: -5px;
 }
 header .logo-text {
   float: right;
   margin-top: -7px;
-  line-height: 28.9px;
+  line-height: 28px;
 }
 header .logo {
   margin-right: 120px;
@@ -41,7 +67,6 @@ header .logo {
 header .logo img {
   margin-right: 21px;
 }
-/* margin-right: 21px; */
 header .logo p:first-of-type {
   display: inherit;
   vertical-align: top;
@@ -50,9 +75,7 @@ header .logo p:first-of-type {
 }
 header .logo p:last-of-type {
   vertical-align: top;
-  font-size: 30.69px;
-  font-weight: 900;
-  letter-spacing: 3.2px;
+  font-size: 35.69px;
   font-weight: 900;
   color: white;
 }
@@ -67,13 +90,23 @@ header nav ul {
 }
 header nav ul li {
   float: left;
-  margin-right: 38px;
+  margin-right: 36.8px;
+}
+
+header nav ul li.active::before {
+  content: "";
+  position: absolute;
+  border-top: solid #1abc9c 5px;
+  top: 0px;
+  width: 61px;
 }
 header nav ul li a {
   text-decoration: none;
   color: #ffffff;
-  letter-spacing: -0.1px;
-  word-spacing: 0.2px;
+}
+header nav ul li a:hover {
+  text-decoration: none;
+  color: #1abc9c;
 }
 header nav ul li a i {
   margin-left: 6px;
@@ -105,57 +138,60 @@ header nav ul li a i {
   margin-right: 10px;
 }
 
-.left-right {
-  position: absolute;
-  top: 430px;
-  width: 100%;
-}
-.left-right span {
-  display: inline-block;
-  width: 50px;
-  height: 50px;
-  background-color: white;
-  text-align: center;
-  padding-top: 13px;
-}
-.left-right span:first-child {
-  margin-left: 70px;
-}
-.left-right span:last-child {
-  float: right;
-  margin-right: 53px;
-}
-
 .slider {
   display: flex;
   align-items: center;
+  position: relative;
 }
-
+.slider .content {
+  color: #ffffff;
+}
 .slider .header {
-  font-family: "Lato";
   font-size: 36px;
   font-weight: 300;
 }
 .slider .header p {
-  font-family: "Lato";
   font-size: 18px;
 }
 .slider .content {
   margin-top: 136px;
-  margin-left: 104.7px;
+  margin-left: 105px;
   align-self: start;
-  letter-spacing: -0.6px;
-  word-spacing: 1px;
+}
+.slider .content .text {
+  line-height: 30px;
+  font-size: 18px;
+  font-weight: 300;
+  margin-top: 24px;
 }
 
-.slider .header .iphone-lg {
-  font-size: 90px;
-  margin-left: -6px;
+.slider .iphone-lg {
+  margin-left: -7px;
+  margin-top: -2px;
+  margin-bottom: 21.5px;
   font-weight: 300;
+  letter-spacing: -1.4px;
 }
-.slider .header .iphone-lg span{
-  font-size: 80px;
-  font-weight: 300;
+.slider .iphone-lg span {
+  letter-spacing: -0.3px;
+  font-size: 90px;
+}
+
+/*  TODO: Fix S span */
+.slider .iphone-lg span:last-of-type {
+  margin-top: -19px;
+  border: solid 2px white;
+  border-radius: 5px;
+  font-size: 52px;
+  padding: 1px;
+  padding-right: 19px;
+  padding-left: 15px;
+  padding-top: 12px;
+  padding-bottom: -3px;
+  /* margin-bottom: 10px; */
+  display: inline-block;
+  height: 63px;
+  width: 64px;
 }
 .slider .header .iphone-lg::first-letter {
   font-weight: 400;
@@ -165,3 +201,188 @@ header nav ul li a i {
   margin-left: 339px;
   margin-top: 34px;
 }
+
+.slider .buttons {
+  margin-top: 44px;
+}
+.slider .buttons a {
+  font-weight: 900;
+  font-size: 18px;
+  display: inline-block;
+  text-align: center;
+  width: 160px;
+  height: 50px;
+  margin-right: 7px;
+  text-decoration: none;
+  color: #ffffff;
+  letter-spacing: 0px;
+  padding-top: 13px;
+  background-color: #1d2c3b;
+}
+
+.slider .buttons a:hover {
+  font-weight: 900;
+  font-size: 18px;
+  display: inline-block;
+  text-align: center;
+  width: 160px;
+  height: 50px;
+  margin-right: 7px;
+  text-decoration: none;
+  color: #ffffff;
+  letter-spacing: 0px;
+  padding-top: 13px;
+  background-color: #1abc9c;
+}
+
+.left-right {
+  position: absolute;
+  top: 336px;
+  width: 100%;
+}
+.left-right span {
+  display: inline-block;
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  /* background-color: white; */
+  border-radius: 3px;
+  border: solid 1px #ffffff;
+  text-align: center;
+  padding-top: 13px;
+}
+.left-right span:hover {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  background-color: white;
+  border-radius: 3px;
+  border: solid 1px #ffffff;
+}
+.left-right span:first-child {
+  margin-left: 70px;
+}
+.left-right span:last-child {
+  float: right;
+  margin-right: 53px;
+}
+
+.slider-pagination {
+  position: absolute;
+  bottom: -4px;
+  left: 910px;
+}
+.slider-pagination ul {
+  list-style: none;
+}
+.slider-pagination ul li {
+  float: left;
+  margin-right: 13px;
+}
+
+.slider-pagination ul li div {
+  cursor: pointer;
+  width: 15px;
+  height: 15px;
+  background-color: white;
+  border-radius: 50%;
+}
+.slider-pagination ul li.current div {
+  border: solid white 2px;
+  background: transparent;
+  width: 17px;
+  height: 17px;
+}
+
+
+
+
+/* Section  Feature Products */
+.featured {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 90px;
+  margin-left: 372px;
+  margin-right: 340px
+}
+.featured .cards-featured {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 41px;
+}
+.featured .scroll-btns{
+  float: right;
+  font-size: 24px;
+  margin-top: 5px;
+}
+
+.featured .scroll-btns .left,.right{
+  color: #A1B1BC;
+  float: right;
+  font-size: 24px;
+  width: 35px;
+  height: 35px;
+  margin-right: 17px;
+  padding: 5px;
+  text-align: center;
+  border: solid #CDD9E1 1px;
+  border-radius: 10px;
+}
+.featured .scroll-btns .left{
+  float: left;
+}
+
+.featured .head p{
+  font-size: 36px;
+  float: left;
+}
+
+.featured .head  p span{
+  font-size: 36px;
+}
+
+.featured .cards-featured .card .media{
+  background-color: green;
+  width: 270px;
+  height: 370px;
+  margin-bottom: 16px;
+}
+
+.featured .cards-featured .card .info{
+  padding-left: 24px;
+}
+
+.featured .cards-featured .card .info .name{
+  margin-bottom: 14px;
+}
+.featured .cards-featured .card .info .stars{
+  margin-bottom: 14px;
+}
+
+
+.featured .cards-featured .card .info .price{
+  font-size: 20px;
+}
+
+
+
+.featured .cards-featured .card .name{
+  font-size: 18px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Section  Feature Products */
