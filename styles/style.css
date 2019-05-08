@@ -325,7 +325,7 @@ header .slider .content .text {
   flex-direction: column;
   justify-content: center;
   padding-top: 90px;
-  padding-left: 375px;
+  padding-left: 373px;
   padding-right: 340px;
   padding-bottom: 100px;
 }
@@ -370,6 +370,7 @@ header .slider .content .text {
   font-size: 36px;
 }
 .products .cards-row .card {
+  cursor: pointer;
   margin-right: 30px;
   background-color: #ffffff;
   border-radius: 10px;
@@ -407,6 +408,16 @@ header .slider .content .text {
   width: 100%;
   border-radius: 10px 10px 0px 0px;
   top: 1px;
+  color: #ffffff;
+}
+.products .cards-row .card .media .featured.best {
+  position: absolute;
+  background-color: #21c2f8;
+  height: 51px;
+  width: 100%;
+  border-radius: 10px 10px 0px 0px;
+  top: 1px;
+  color: #ffffff;
 }
 .products .cards-row .card .media .featured img {
   position: absolute;
@@ -466,6 +477,7 @@ header .slider .content .text {
   border-radius: 5px;
   padding-left: 7px;
   cursor: pointer;
+  margin-top: 10px;
 }
 .products .cards-row .card .info .card-sale:hover::after {
   content: "+";
@@ -765,14 +777,20 @@ header .slider .content .text {
 }
 .recent.news .head p {
   font-size: 36px;
+  float: left;
 }
 .recent.news .row {
   display: flex;
   margin-bottom: 30px;
+  clear: both;
 }
 .recent.news {
   padding-top: 92px;
   padding-left: 373px;
+  padding-right: 337px;
+}
+.recent.news .news-cards {
+  margin-top: 85px;
 }
 
 .recent.news .poster {
@@ -781,13 +799,14 @@ header .slider .content .text {
   position: relative;
 }
 .recent.news .row .card {
+  cursor: pointer;
   display: grid;
   grid-template-areas:
     "icon1 poster blog-text"
     "icon2 poster blog-text"
     "icon3 poster blog-text"
     "icon4 poster blog-text";
-  grid-template-columns: 40px 260px 278px;
+  grid-template-columns: 40px 260px 273px;
   grid-template-rows: 39px 39px 39px 77px;
   width: 570px;
   margin-right: 30px;
@@ -830,6 +849,7 @@ header .slider .content .text {
   text-align: center;
   padding-top: 10px;
   color: #ffffff;
+  border-bottom: solid #ffffff 2px;
 }
 .icon2 {
   grid-area: icon2;
@@ -838,6 +858,7 @@ header .slider .content .text {
   text-align: center;
   padding-top: 10px;
   color: #ffffff;
+  border-bottom: solid #ffffff 2px;
 }
 .icon3 {
   grid-area: icon3;
@@ -846,13 +867,17 @@ header .slider .content .text {
   text-align: center;
   padding-top: 10px;
   color: #ffffff;
+  border-bottom: solid #ffffff 2px;
 }
 .icon4 {
   grid-area: icon4;
   background-color: #686d80;
-  font-size: 18px;
+  font-size: 14px;
+  font-family: Arial, Helvetica, sans-serif;
   text-align: center;
-  padding-top: 10px;
+  padding-top: 19px;
+  line-height: 19.7px;
+  padding-left: 2px;
   color: #ffffff;
 }
 .poster {
@@ -1001,7 +1026,8 @@ header .slider .content .text {
   position: relative;
   border: solid #e5e5e5 1px;
 }
-.fox-shop .list-v ul li.active {
+.fox-shop .list-v ul li.active a {
+  color: #1abc9c;
 }
 .fox-shop .list-v .hidden .img-holder {
   background-color: #cccccc;
@@ -1042,6 +1068,7 @@ header .slider .content .text {
   border-left: solid #e5e5e5 1px;
   height: 38px;
   padding-top: 12px;
+  color: #999999;
 }
 .fox-shop .list-h {
   margin-left: 30px;
@@ -1065,13 +1092,30 @@ header .slider .content .text {
   padding: 5px;
   position: relative;
   height: 40px;
-  border: solid #e5e5e5 1px;
-  margin-right: 27px;
+  padding-right: 16px;
+  border-top: solid white 4px;
+}
+.fox-shop .list-h ul li.active {
+  border-top: solid #1abc9c 4px;
+}
+.fox-shop .list-h ul li.active a {
+  color: #1abc9c;
+}
+
+.fox-shop .list-h ul li:hover {
+  border-top: solid #1abc9c 4px;
+}
+.fox-shop .list-h ul li:hover a {
+  color: #1abc9c;
 }
 .fox-shop .list-h ul li a {
   text-decoration: none;
   color: #a1b1bc;
   font-size: 14px;
+  padding-left: 15px;
+  display: inline-block;
+  height: 32px;
+  padding-top: 1px;
 }
 
 .fox-shop .list-h img {
@@ -1086,6 +1130,11 @@ header .slider .content .text {
   word-spacing: -0.2px;
   line-height: 23.9px;
 }
+.fox-shop .list-h .lis-h-wrap {
+  height: 243px;
+  border: solid #e5e5e5 1px;
+}
+
 .fox-shop .list-h .hidden p:last-of-type {
   position: absolute;
   top: 89px;
@@ -1103,6 +1152,7 @@ header .slider .content .text {
   margin-top: 100px;
   padding-top: 87px;
   padding-left: 417px;
+  
 }
 
 .statistics div {
@@ -1121,4 +1171,56 @@ header .slider .content .text {
   text-align: right;
   font-size: 18px;
   margin-top: -2px;
+}
+
+.lists {
+  padding-top: 96px;
+  padding-left: 374px;
+  position: relative;
+  padding-bottom: 100px;
+}
+.lists .row {
+  display: flex;
+  flex-direction: row;
+}
+.lists .head {
+  font-size: 18px;
+}
+.lists .search-lg {
+  width: 1170px;
+  height: 60px;
+  margin-top: 26px;
+  padding-left: 31px;
+  border-radius: 5px;
+  border: solid #a1b1bc 1px;
+}
+
+.lists .col {
+  margin-right: 7px;
+}
+.lists .search-icon {
+  position: absolute;
+  top: 473px;
+  right: 381px;
+  font-size: 24px;
+  color: #a1b1bc;
+}
+.lists ul {
+  margin-top: 28px;
+  list-style: none;
+  width: 293px;
+}
+
+.lists ul li {
+  margin-bottom: 22px;
+}
+
+.lists ul li a {
+  font-size: 14px;
+  margin-left: 10px;
+  text-decoration: none;
+  color: #a1b1bc;
+}
+.lists ul li i {
+  color: #1abc9c;
 }
