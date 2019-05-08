@@ -326,12 +326,25 @@ header .slider .content .text {
   flex-direction: column;
   justify-content: center;
   padding-top: 90px;
+  padding-bottom: 100px;
 }
+
+.products .head{
+  width: 1171px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0px auto;
+}
+
+
 .products .cards-row {
   display: flex;
   flex-direction: row;
   justify-content: center;
   margin-top: 41px;
+  margin: 41px auto;
+  transform: translateX(0.7%);
+  margin-bottom: 0px;
 }
 .recent.products .cards-row:nth-of-type(3) {
   margin-top: 30px;
@@ -339,7 +352,8 @@ header .slider .content .text {
 .scroll-btns {
   float: right;
   font-size: 24px;
-  margin-top: 5px;
+  margin-top: 6px;
+  margin-right: -25px;
 }
 
 .scroll-btns .left,
@@ -362,6 +376,7 @@ header .slider .content .text {
 .products .head p {
   font-size: 36px;
   float: left;
+  margin-left: 6px;
 }
 
 .products .head p span {
@@ -369,7 +384,7 @@ header .slider .content .text {
 }
 .products .cards-row .card {
   cursor: pointer;
-  margin-right: 30px;
+  margin: 0px 15px;
   background-color: #ffffff;
   border-radius: 10px;
   height: 562px;
@@ -554,15 +569,17 @@ header .slider .content .text {
 
 .best-item {
   padding-top: 100px;
-  padding-left: 376px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .best-item .wrap-purchase {
-  margin-right: 357px;
   border: solid #dfe8ea 1px;
   border-radius: 10px;
   padding-top: 30px;
   padding-bottom: 24px;
-  padding-left: 32px;
+  /* padding-left: 32px; */
 }
 .best-item .img {
   width: 92px;
@@ -573,6 +590,7 @@ header .slider .content .text {
   padding-top: 10px;
   float: left;
   margin-right: 44px;
+  margin-left: 35px;
   margin-top: -6px;
 }
 .far.fa-star {
@@ -586,11 +604,12 @@ header .slider .content .text {
 }
 .best-item .wrap-purchase .content {
   position: relative;
+  width: 1153px;
 }
 .best-item .wrap-purchase a {
   position: absolute;
   background-color: #34495e;
-  right: 43px;
+  right: 26px;
   top: 12px;
   width: 180px;
   height: 60px;
@@ -630,6 +649,7 @@ header .slider .content .text {
 }
 .best-item .advertising {
   margin-top: 50px;
+  margin-left: 31px;
 }
 
 .best-item .advertising .ad-card .name {
@@ -642,6 +662,7 @@ header .slider .content .text {
   margin-left: 30px;
   margin-top: 9px;
   line-height: 24px;
+  
 }
 .ad-card-1 {
   grid-area: ad-card-1;
@@ -751,9 +772,11 @@ header .slider .content .text {
 }
 .best-item .advertising .ad-card:hover {
   background-color: #2c3e50;
+  color: #ffffff;
 }
 .best-item .advertising .ad-card:hover .btn {
   background-color: #1e2a37;
+  
 }
 
 /* Section  Feature Products */
