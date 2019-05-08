@@ -57,7 +57,7 @@ header {
 
 .header-wrap {
   display: flex;
-  justify-content: start;
+  justify-content: center;
   align-items: center;
 }
 
@@ -74,8 +74,8 @@ header .logo-text {
   line-height: 28px;
 }
 header .logo {
-  margin-right: 120px;
-  margin-left: 375px;
+  margin-right: 121px;
+  padding-left: 14px;
 }
 header .logo img {
   margin-right: 21px;
@@ -161,30 +161,34 @@ header nav ul li a i {
 header .slider {
   display: flex;
   align-items: center;
+  justify-content: center;
   position: relative;
 }
 header .slider .content {
   color: #ffffff;
   position: relative;
+  transform: translateX(7.6%);
+  margin-bottom: 87px;
 }
 header .slider .content .lg-s {
   position: absolute;
   border: solid 2px white;
   border-radius: 9px;
   font-size: 21px;
-  padding-right: 19px;
+  /* padding-right: 19px; */
   padding-left: 15px;
-  padding-top: 12px;
+  /* padding-top: 12px; */
   display: inline-block;
   height: 63px;
   width: 64px;
-  top: 67px;
-  left: 348px;
+
 }
-header .slider .content .lg-s span {
-  font-size: 55px;
+header .slider .content span.lg-s {
+  font-size: 51px;
   position: absolute;
-  top: -5px;
+  top: 68px;
+  /* padding-bottom: 13px; */
+  right: 157px;
 }
 
 header .slider .header {
@@ -194,11 +198,7 @@ header .slider .header {
 header .slider .header p {
   font-size: 18px;
 }
-header .slider .content {
-  margin-top: 136px;
-  margin-left: 105px;
-  align-self: start;
-}
+
 header .slider .content .text {
   line-height: 30px;
   font-size: 18px;
@@ -223,8 +223,8 @@ header .slider .content .text {
 }
 
 .slider img {
-  margin-left: 339px;
   margin-top: 34px;
+  transform: translateX(-11.9%);
 }
 
 .slider .buttons {
@@ -294,8 +294,9 @@ header .slider .content .text {
 
 .slider-pagination {
   position: absolute;
-  bottom: -4px;
-  left: 910px;
+  top: 98.4%;
+  left: 50.8%;
+  transform: translateX(-50%);
 }
 .slider-pagination ul {
   list-style: none;
@@ -325,14 +326,11 @@ header .slider .content .text {
   flex-direction: column;
   justify-content: center;
   padding-top: 90px;
-  padding-left: 373px;
-  padding-right: 340px;
-  padding-bottom: 100px;
 }
 .products .cards-row {
   display: flex;
   flex-direction: row;
-  justify-content: start;
+  justify-content: center;
   margin-top: 41px;
 }
 .recent.products .cards-row:nth-of-type(3) {
